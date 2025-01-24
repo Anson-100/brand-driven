@@ -4,13 +4,10 @@ import { StyleSheet, View, Text } from "react-native"
 export default function NotFoundScreen() {
   return (
     <>
-      <Stack.Screen options={{ title: "Oops!" }} />
-      <View style={styles.container}>
-        <Text type="title" className="text-xl font-bold">
-          This screen doesn't exist.
-        </Text>
+      <View className="bg-gray-200 h-full flex items-center justify-center">
+        <Text className="text-xl font-bold">This screen doesn't exist.</Text>
         <Link href="/" style={styles.link}>
-          <Text type="link">Go to home screen!</Text>
+          <Text>Go to home screen!</Text>
         </Link>
       </View>
     </>
